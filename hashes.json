@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-19T12:00:03Z",
-  "count": 52,
+  "generated": "2026-10-19T18:00:04Z",
+  "count": 58,
   "hashes": [
     {
       "title": "M+ Baloncesto 1080p **",
@@ -17,6 +17,20 @@
       "tvg_id": "M+ Baloncesto 2"
     },
     {
+      "title": "DAZN 1 720p *",
+      "hash": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+      "group": "DAZN",
+      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
+      "tvg_id": "DAZN 1 HD"
+    },
+    {
+      "title": "DAZN 1 720p **",
+      "hash": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+      "group": "DAZN",
+      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
+      "tvg_id": "DAZN 1 HD"
+    },
+    {
       "title": "DAZN 1 1080p *",
       "hash": "dddff67edfa7061f643ec5ae0be110169850363d",
       "group": "DAZN",
@@ -29,6 +43,13 @@
       "group": "DAZN",
       "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
       "tvg_id": "DAZN 1 HD"
+    },
+    {
+      "title": "DAZN 4 1080p *",
+      "hash": "d669c6cee7173a1c8994075f7050a6526655b1dc",
+      "group": "DAZN",
+      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
+      "tvg_id": "DAZN 4 HD"
     },
     {
       "title": "DAZN 4 **",
@@ -46,14 +67,14 @@
     },
     {
       "title": "DAZN F1 1080p **",
-      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
+      "hash": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
     },
     {
       "title": "DAZN F1 1080p **",
-      "hash": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
+      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -85,6 +106,27 @@
       "group": "HYPERMOTION",
       "logo": "https://i.ibb.co/8K0VrQV/hypermotion2.png",
       "tvg_id": ""
+    },
+    {
+      "title": "DAZN LaLiga 720p *",
+      "hash": "eb4975702ceadca7ed74f8707e17a9f55569dbb9",
+      "group": "LA LIGA",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
+      "tvg_id": "DAZN LaLiga HD"
+    },
+    {
+      "title": "DAZN LaLiga 1080p *",
+      "hash": "cc108ae39f92c48f6c946763047bd1c9b7b7d889",
+      "group": "LA LIGA",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
+      "tvg_id": "DAZN LaLiga HD"
+    },
+    {
+      "title": "DAZN LaLiga 1080p **",
+      "hash": "7f9857c45764ef2c7cdfb619b89db3056a57a51f",
+      "group": "LA LIGA",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
+      "tvg_id": "DAZN LaLiga HD"
     },
     {
       "title": "DAZN LaLiga 1080p **",
@@ -176,13 +218,6 @@
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png",
       "tvg_id": "M+ Liga de Campeones 5"
-    },
-    {
-      "title": "M+ Liga de Campeones 7 1080p *",
-      "hash": "f22268a7d4a279feee02243d93a65cca2825c8e1",
-      "group": "LIGA DE CAMPEONES",
-      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png",
-      "tvg_id": ""
     },
     {
       "title": "M+ Deportes 720p *",
@@ -350,6 +385,13 @@
       "hash": "bf3773e7f5e53c11347c70c18bd085322efbc90f",
       "group": "NBA",
       "logo": "https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "Tennis Channel 1080p *",
+      "hash": "a4cbadd19442b800727be713270fa9c917cc8582",
+      "group": "TENNIS",
+      "logo": "https://www.sportsvideo.org/wp-content/uploads/2016/01/tennis-channel-logo-e1518530950839.jpg",
       "tvg_id": ""
     },
     {
