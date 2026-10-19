@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-19T18:00:04Z",
-  "count": 58,
+  "generated": "2026-10-19T21:00:03Z",
+  "count": 57,
   "hashes": [
     {
       "title": "M+ Baloncesto 1080p **",
@@ -43,13 +43,6 @@
       "group": "DAZN",
       "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
       "tvg_id": "DAZN 1 HD"
-    },
-    {
-      "title": "DAZN 4 1080p *",
-      "hash": "d669c6cee7173a1c8994075f7050a6526655b1dc",
-      "group": "DAZN",
-      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
-      "tvg_id": "DAZN 4 HD"
     },
     {
       "title": "DAZN 4 **",
@@ -110,6 +103,13 @@
     {
       "title": "DAZN LaLiga 720p *",
       "hash": "eb4975702ceadca7ed74f8707e17a9f55569dbb9",
+      "group": "LA LIGA",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
+      "tvg_id": "DAZN LaLiga HD"
+    },
+    {
+      "title": "DAZN LaLiga 720p **",
+      "hash": "385abcf801b787eec6ed6624908758bb165c0a55",
       "group": "LA LIGA",
       "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
       "tvg_id": "DAZN LaLiga HD"
@@ -302,13 +302,6 @@
       "group": "MOVISTAR DEPORTES",
       "logo": "https://i.ibb.co/gWMRpFB/vamos.png",
       "tvg_id": "M+ Vamos 2"
-    },
-    {
-      "title": "M+ VAMOS 3 720p **",
-      "hash": "837883625d40e1eb5566eefaf74811046491f53a",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://i.ibb.co/gWMRpFB/vamos.png",
-      "tvg_id": "M+ Vamos 3"
     },
     {
       "title": "M+ VAMOS 3 1080p *",
