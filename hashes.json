@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-19T21:00:03Z",
-  "count": 57,
+  "generated": "2026-10-20T02:00:03Z",
+  "count": 55,
   "hashes": [
     {
       "title": "M+ Baloncesto 1080p **",
@@ -52,8 +52,8 @@
       "tvg_id": "DAZN 4 HD"
     },
     {
-      "title": "DAZN F1 720p **",
-      "hash": "f16d68fa5ff64f3894a45062ca28e4e66f142c6a",
+      "title": "DAZN F1 1080p **",
+      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -61,13 +61,6 @@
     {
       "title": "DAZN F1 1080p **",
       "hash": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
-      "group": "FORMULA 1",
-      "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
-      "tvg_id": "DAZN F1 HD"
-    },
-    {
-      "title": "DAZN F1 1080p **",
-      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -101,13 +94,6 @@
       "tvg_id": ""
     },
     {
-      "title": "DAZN LaLiga 720p *",
-      "hash": "eb4975702ceadca7ed74f8707e17a9f55569dbb9",
-      "group": "LA LIGA",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
-      "tvg_id": "DAZN LaLiga HD"
-    },
-    {
       "title": "DAZN LaLiga 720p **",
       "hash": "385abcf801b787eec6ed6624908758bb165c0a55",
       "group": "LA LIGA",
@@ -123,14 +109,14 @@
     },
     {
       "title": "DAZN LaLiga 1080p **",
-      "hash": "7f9857c45764ef2c7cdfb619b89db3056a57a51f",
+      "hash": "9c588ac92554746c489bc553773d959f6d2dfd8e",
       "group": "LA LIGA",
       "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
       "tvg_id": "DAZN LaLiga HD"
     },
     {
       "title": "DAZN LaLiga 1080p **",
-      "hash": "9c588ac92554746c489bc553773d959f6d2dfd8e",
+      "hash": "7f9857c45764ef2c7cdfb619b89db3056a57a51f",
       "group": "LA LIGA",
       "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
       "tvg_id": "DAZN LaLiga HD"
