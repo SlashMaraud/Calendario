@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-21T16:00:06Z",
-  "count": 116,
+  "generated": "2026-10-21T16:23:56Z",
+  "count": 111,
   "hashes": [
     {
       "title": "DAZN Baloncesto 720p *",
@@ -143,13 +143,6 @@
       "tvg_id": "DAZN F1 HD"
     },
     {
-      "title": "DAZN F1 1080p **",
-      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
-      "group": "FORMULA 1",
-      "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
-      "tvg_id": "DAZN F1 HD"
-    },
-    {
       "title": "LaLiga TV Hypermotion 1080p **",
       "hash": "e4cbd1a425120b1f44b523a55bd1a98c31cad9fe",
       "group": "HYPERMOTION",
@@ -206,13 +199,6 @@
       "tvg_id": "DAZN LaLiga 2 HD"
     },
     {
-      "title": "DAZN LaLiga 2 720p **",
-      "hash": "d7ce121c775a303c470d2139b8e8cfa0db38adad",
-      "group": "LA LIGA",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png",
-      "tvg_id": "DAZN LaLiga 2 HD"
-    },
-    {
       "title": "DAZN LaLiga 2 1080p *",
       "hash": "b63fcadc2390455d8a328f6c16b8b0a9adec21a3",
       "group": "LA LIGA",
@@ -235,14 +221,14 @@
     },
     {
       "title": "M+ LaLiga 720p *",
-      "hash": "f863873de9f7b2996dde19a0657dd89835af3007",
+      "hash": "3ace1463a7cad979c3a4002b245487e9982e9f1a",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
     },
     {
       "title": "M+ LaLiga 720p *",
-      "hash": "3ace1463a7cad979c3a4002b245487e9982e9f1a",
+      "hash": "f863873de9f7b2996dde19a0657dd89835af3007",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
@@ -256,14 +242,14 @@
     },
     {
       "title": "M+ LaLiga 1080p **",
-      "hash": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+      "hash": "3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
     },
     {
       "title": "M+ LaLiga 1080p **",
-      "hash": "3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259",
+      "hash": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
@@ -305,14 +291,14 @@
     },
     {
       "title": "M+ Liga de Campeones 1080p **",
-      "hash": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+      "hash": "91af434b0bb521189286f8cbbab1aed39d7536fe",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png",
       "tvg_id": "M+ Liga de Campeones HD"
     },
     {
       "title": "M+ Liga de Campeones 1080p **",
-      "hash": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+      "hash": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png",
       "tvg_id": "M+ Liga de Campeones HD"
@@ -332,6 +318,13 @@
       "tvg_id": "M+ Liga de Campeones 2 HD"
     },
     {
+      "title": "M+ Liga de Campeones 2 1080p **",
+      "hash": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+      "group": "LIGA DE CAMPEONES",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png",
+      "tvg_id": "M+ Liga de Campeones 2 HD"
+    },
+    {
       "title": "M+ Liga de Campeones 3 720p *",
       "hash": "5b7f54b12e0f96ceba1299f44eac4b0f97403e4e",
       "group": "LIGA DE CAMPEONES",
@@ -341,20 +334,6 @@
     {
       "title": "M+ Liga de Campeones 3 720p **",
       "hash": "cfc371890bfb502737a26de5215e50929c52d0f9",
-      "group": "LIGA DE CAMPEONES",
-      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png",
-      "tvg_id": "M+ Liga de Campeones 3 HD"
-    },
-    {
-      "title": "M+ Liga de Campeones 3 1080p **",
-      "hash": "4416843c96b7f7a1bc55c476091a60fff0922bc7",
-      "group": "LIGA DE CAMPEONES",
-      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png",
-      "tvg_id": "M+ Liga de Campeones 3 HD"
-    },
-    {
-      "title": "M+ Liga de Campeones 3 1080p **",
-      "hash": "85a8e0675bc27ddfd403b8f72953c606d07a8de8",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png",
       "tvg_id": "M+ Liga de Campeones 3 HD"
@@ -451,13 +430,6 @@
       "tvg_id": "M+ Deportes 2 HD"
     },
     {
-      "title": "M+ Deportes 3 1080p *",
-      "hash": "f4d9011721fad5098febbe4d7c078a582e176a01",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://i.ibb.co/jDg5qWD/deportes3.png",
-      "tvg_id": "M+ Deportes 3"
-    },
-    {
       "title": "M+ Deportes 4 720p *",
       "hash": "2a5d90651e212106434edea5bfbba1a843b7b97c",
       "group": "MOVISTAR DEPORTES",
@@ -543,21 +515,14 @@
     },
     {
       "title": "RFEF TV 1080p *",
-      "hash": "177796041773be99b489dd3ce86144f243e7355f",
-      "group": "RFEF TV",
-      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
-      "tvg_id": "Primera Federación"
-    },
-    {
-      "title": "RFEF TV 1080p *",
       "hash": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
     },
     {
-      "title": "RFEF TV 1080p **",
-      "hash": "854ff9c607101791346111cd2366a392c3b8c351",
+      "title": "RFEF TV 1080p *",
+      "hash": "177796041773be99b489dd3ce86144f243e7355f",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
@@ -565,6 +530,13 @@
     {
       "title": "RFEF TV 1080p **",
       "hash": "3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f",
+      "group": "RFEF TV",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
+      "tvg_id": "Primera Federación"
+    },
+    {
+      "title": "RFEF TV 1080p **",
+      "hash": "854ff9c607101791346111cd2366a392c3b8c351",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
@@ -642,13 +614,6 @@
     {
       "title": "Bein Sports 3 TR 720p *",
       "hash": "229419659a062e80a088bb049137dafa9c9952fe",
-      "group": "DEPORTES",
-      "logo": "https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.digiturk.ligtv.jpg",
-      "tvg_id": ""
-    },
-    {
-      "title": "Bein Sports TR 720p *",
-      "hash": "1e3451ef86d34c96aabece2ac7bcae70ba9ed767",
       "group": "DEPORTES",
       "logo": "https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.digiturk.ligtv.jpg",
       "tvg_id": ""
