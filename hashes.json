@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-21T02:00:04Z",
-  "count": 85,
+  "generated": "2026-10-21T03:08:41Z",
+  "count": 83,
   "hashes": [
     {
       "title": "DAZN Baloncesto 720p *",
@@ -36,13 +36,6 @@
       "group": "BALONCESTO",
       "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
       "tvg_id": "M+ Baloncesto 2"
-    },
-    {
-      "title": "DAZN 1 1080p **",
-      "hash": "78124d96a1a4601e7910f50e36a16e35efcfb398",
-      "group": "DAZN",
-      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
-      "tvg_id": "DAZN 1 HD"
     },
     {
       "title": "DAZN 2 720p **",
@@ -248,13 +241,6 @@
       "tvg_id": "M+ Liga de Campeones HD"
     },
     {
-      "title": "M+ Liga de Campeones 2 720p *",
-      "hash": "47188da7d2e4beaee82cff174f223fdd23f78fa6",
-      "group": "LIGA DE CAMPEONES",
-      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png",
-      "tvg_id": "M+ Liga de Campeones 2 HD"
-    },
-    {
       "title": "M+ Liga de Campeones 2 720p **",
       "hash": "38f7b2044e549df2039ff26cefa6f9a60c854d5e",
       "group": "LIGA DE CAMPEONES",
@@ -312,14 +298,14 @@
     },
     {
       "title": "M+ Liga de Campeones 4 1080p **",
-      "hash": "64f01629d4a19e70efd9e6778c397282ba087547",
+      "hash": "e9f4493d2d851f4636720f639113e05b4a21a74c",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png",
       "tvg_id": "M+ Liga de Campeones 4"
     },
     {
       "title": "M+ Liga de Campeones 4 1080p **",
-      "hash": "e9f4493d2d851f4636720f639113e05b4a21a74c",
+      "hash": "64f01629d4a19e70efd9e6778c397282ba087547",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png",
       "tvg_id": "M+ Liga de Campeones 4"
@@ -550,14 +536,14 @@
     },
     {
       "title": "Dazn MotoGP 1080p **",
-      "hash": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+      "hash": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
       "group": "MOTOGP",
       "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
       "tvg_id": "DAZN MotoGP"
     },
     {
       "title": "Dazn MotoGP 1080p **",
-      "hash": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+      "hash": "342ca6975a4884d81f9fec5c4085a47060bd2028",
       "group": "MOTOGP",
       "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
       "tvg_id": "DAZN MotoGP"
