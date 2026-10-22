@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-22T02:00:05Z",
-  "count": 129,
+  "generated": "2026-10-22T03:01:37Z",
+  "count": 127,
   "hashes": [
     {
       "title": "DAZN Baloncesto 720p **",
@@ -43,13 +43,6 @@
       "group": "BALONCESTO",
       "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
       "tvg_id": ""
-    },
-    {
-      "title": "M+ Baloncesto 2 1080p **",
-      "hash": "88113ee23295b8930ae328a88a8c1b861b8f21f1",
-      "group": "BALONCESTO",
-      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
-      "tvg_id": "M+ Baloncesto 2"
     },
     {
       "title": "DAZN 1 720p *",
@@ -172,13 +165,6 @@
     },
     {
       "title": "DAZN F1 1080p **",
-      "hash": "0a81ba020d498aca1248e0591d8ffab99eb80bd4",
-      "group": "FORMULA 1",
-      "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
-      "tvg_id": "DAZN F1 HD"
-    },
-    {
-      "title": "DAZN F1 1080p **",
       "hash": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
@@ -187,6 +173,13 @@
     {
       "title": "DAZN F1 1080p **",
       "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
+      "group": "FORMULA 1",
+      "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
+      "tvg_id": "DAZN F1 HD"
+    },
+    {
+      "title": "DAZN F1 1080p **",
+      "hash": "0a81ba020d498aca1248e0591d8ffab99eb80bd4",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -312,14 +305,14 @@
     },
     {
       "title": "M+ LaLiga 720p *",
-      "hash": "3ace1463a7cad979c3a4002b245487e9982e9f1a",
+      "hash": "f863873de9f7b2996dde19a0657dd89835af3007",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
     },
     {
       "title": "M+ LaLiga 720p *",
-      "hash": "f863873de9f7b2996dde19a0657dd89835af3007",
+      "hash": "3ace1463a7cad979c3a4002b245487e9982e9f1a",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
@@ -333,14 +326,14 @@
     },
     {
       "title": "M+ LaLiga 1080p **",
-      "hash": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
+      "hash": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
     },
     {
       "title": "M+ LaLiga 1080p **",
-      "hash": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+      "hash": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
       "tvg_id": "M+ LaLiga HD"
@@ -403,14 +396,14 @@
     },
     {
       "title": "M+ Liga de Campeones 1080p **",
-      "hash": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+      "hash": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png",
       "tvg_id": "M+ Liga de Campeones HD"
     },
     {
       "title": "M+ Liga de Campeones 1080p **",
-      "hash": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+      "hash": "91af434b0bb521189286f8cbbab1aed39d7536fe",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png",
       "tvg_id": "M+ Liga de Campeones HD"
@@ -739,21 +732,14 @@
     },
     {
       "title": "RFEF TV 1080p *",
-      "hash": "177796041773be99b489dd3ce86144f243e7355f",
-      "group": "RFEF TV",
-      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
-      "tvg_id": "Primera Federación"
-    },
-    {
-      "title": "RFEF TV 1080p *",
       "hash": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
     },
     {
-      "title": "RFEF TV 1080p **",
-      "hash": "854ff9c607101791346111cd2366a392c3b8c351",
+      "title": "RFEF TV 1080p *",
+      "hash": "177796041773be99b489dd3ce86144f243e7355f",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
@@ -766,11 +752,11 @@
       "tvg_id": "Primera Federación"
     },
     {
-      "title": "Esport3 720p *",
-      "hash": "ff03650163b9456d59ed5f262aa3ab2e19831e6d",
-      "group": "DEPORTES",
-      "logo": "https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg",
-      "tvg_id": "Esport 3"
+      "title": "RFEF TV 1080p **",
+      "hash": "854ff9c607101791346111cd2366a392c3b8c351",
+      "group": "RFEF TV",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
+      "tvg_id": "Primera Federación"
     },
     {
       "title": "Gol TV 1080p **",
@@ -844,6 +830,13 @@
     },
     {
       "title": "Dazn MotoGP 1080p **",
+      "hash": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+      "group": "MOTOGP",
+      "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
+      "tvg_id": "DAZN MotoGP"
+    },
+    {
+      "title": "Dazn MotoGP 1080p **",
       "hash": "b18dda520e112e48a33d6d0ae558681b9ecfbb4d",
       "group": "MOTOGP",
       "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
@@ -852,13 +845,6 @@
     {
       "title": "Dazn MotoGP 1080p **",
       "hash": "342ca6975a4884d81f9fec5c4085a47060bd2028",
-      "group": "MOTOGP",
-      "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
-      "tvg_id": "DAZN MotoGP"
-    },
-    {
-      "title": "Dazn MotoGP 1080p **",
-      "hash": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
       "group": "MOTOGP",
       "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
       "tvg_id": "DAZN MotoGP"
