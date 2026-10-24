@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-24T02:00:05Z",
-  "count": 142,
+  "generated": "2026-10-24T03:00:05Z",
+  "count": 141,
   "hashes": [
     {
       "title": "DAZN Baloncesto 720p **",
@@ -137,14 +137,14 @@
     },
     {
       "title": "DAZN F1 720p **",
-      "hash": "f16d68fa5ff64f3894a45062ca28e4e66f142c6a",
+      "hash": "20086a76248efe8d5230c15d41c69bae8fa6381c",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
     },
     {
       "title": "DAZN F1 720p **",
-      "hash": "20086a76248efe8d5230c15d41c69bae8fa6381c",
+      "hash": "f16d68fa5ff64f3894a45062ca28e4e66f142c6a",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -165,14 +165,14 @@
     },
     {
       "title": "DAZN F1 1080p **",
-      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
+      "hash": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
     },
     {
       "title": "DAZN F1 1080p **",
-      "hash": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
+      "hash": "02be332ebead0484a5354fa25e97b6833b8b129e",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -361,14 +361,14 @@
     },
     {
       "title": "M+ Liga de Campeones 1080p **",
-      "hash": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+      "hash": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png",
       "tvg_id": "M+ Liga de Campeones HD"
     },
     {
       "title": "M+ Liga de Campeones 1080p **",
-      "hash": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+      "hash": "91af434b0bb521189286f8cbbab1aed39d7536fe",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png",
       "tvg_id": "M+ Liga de Campeones HD"
@@ -389,14 +389,14 @@
     },
     {
       "title": "M+ Liga de Campeones 2 1080p **",
-      "hash": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+      "hash": "bb26037a253866d341778181eff5c8637240d615",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png",
       "tvg_id": "M+ Liga de Campeones 2 HD"
     },
     {
       "title": "M+ Liga de Campeones 2 1080p **",
-      "hash": "bb26037a253866d341778181eff5c8637240d615",
+      "hash": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png",
       "tvg_id": "M+ Liga de Campeones 2 HD"
@@ -725,14 +725,14 @@
     },
     {
       "title": "RFEF TV 1080p *",
-      "hash": "177796041773be99b489dd3ce86144f243e7355f",
+      "hash": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
     },
     {
       "title": "RFEF TV 1080p *",
-      "hash": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
+      "hash": "177796041773be99b489dd3ce86144f243e7355f",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
@@ -841,13 +841,6 @@
       "group": "DEPORTES",
       "logo": "https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg",
       "tvg_id": "Esport 3"
-    },
-    {
-      "title": "Gol TV 1080p **",
-      "hash": "42d3724b275c8029cef0b4d9ce4c59add5cd3ec1",
-      "group": "DEPORTES",
-      "logo": "https://statics.goltelevision.com/shared/assets/logos/og-image2.jpg",
-      "tvg_id": "Gol"
     },
     {
       "title": "RALLY TV 1080p *",
@@ -970,14 +963,14 @@
     },
     {
       "title": "UFC FIGHT PASS *",
-      "hash": "138f0b038420a425d376cb5c85d3d61570466b20",
+      "hash": "2e152cbc3741c8087cb865cc77fa0c2e3f8539cf",
       "group": "UFC",
       "logo": "https://cdn.prod.website-files.com/5cf5a026c170934c311c121c/63ab4f5a7a18d4001ca360c9_UFC_FightPass_hor_neg.png",
       "tvg_id": ""
     },
     {
       "title": "UFC FIGHT PASS *",
-      "hash": "2e152cbc3741c8087cb865cc77fa0c2e3f8539cf",
+      "hash": "138f0b038420a425d376cb5c85d3d61570466b20",
       "group": "UFC",
       "logo": "https://cdn.prod.website-files.com/5cf5a026c170934c311c121c/63ab4f5a7a18d4001ca360c9_UFC_FightPass_hor_neg.png",
       "tvg_id": ""
