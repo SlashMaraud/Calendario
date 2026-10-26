@@ -932,6 +932,34 @@
       "group": "UFC",
       "logo": "https://cdn.prod.website-files.com/5cf5a026c170934c311c121c/63ab4f5a7a18d4001ca360c9_UFC_FightPass_hor_neg.png",
       "tvg_id": ""
+    },
+    {
+      "title": "NBA League Pass",
+      "hash": "f4991d32784f9c236b087fc864c42bbd18f9720f",
+      "group": "NBA",
+      "logo": "https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "NBA",
+      "hash": "f4991d32784f9c236b087fc864c42bbd18f9720f",
+      "group": "NBA",
+      "logo": "https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "League Pass",
+      "hash": "f4991d32784f9c236b087fc864c42bbd18f9720f",
+      "group": "NBA",
+      "logo": "https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "NBA ESPN",
+      "hash": "f4991d32784f9c236b087fc864c42bbd18f9720f",
+      "group": "NBA",
+      "logo": "https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png",
+      "tvg_id": ""
     }
   ]
 }
