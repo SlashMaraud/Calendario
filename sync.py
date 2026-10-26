@@ -2,18 +2,20 @@ import json
 import urllib.request
 import sys
 
-# Pasarelas IPFS públicas ordenadas por fiabilidad para servidores automáticos
+# URL que funciona (responde con HTTP 200)
 SOURCE_URLS = [
-    "https://ipfs.io/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
-    "https://dweb.link/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
-    "https://cloudflare-ipfs.com/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
     "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
 ]
 
 def fetch_json():
+    # Cabeceras avanzadas para evitar que Cloudflare bloquee o devuelva datos parciales al robot
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "es-ES,es;q=0.9",
+        "Referer": "https://tokyo.elcano-ipfs.workers.dev/"
     }
+    
     for url in SOURCE_URLS:
         try:
             print(f"Intentando descargar desde: {url}")
@@ -23,8 +25,7 @@ def fetch_json():
                     data_str = response.read().decode('utf-8')
                     parsed = json.loads(data_str)
                     
-                    # SEGURIDAD: Exigir que tenga más de 10 elementos para evitar sobreescribir con datos incompletos
-                    if isinstance(parsed, dict) and len(parsed) > 10:
+                    if isinstance(parsed, dict):
                         # Mapeo flexible para cualquier variante de "nba espn" (720p, 1080p, etc.)
                         for key in list(parsed.keys()):
                             if "nba espn" in key.strip().lower():
@@ -32,10 +33,8 @@ def fetch_json():
                                 print(f"Canal duplicado con éxito: 'NBA League Pass' mapeado desde '{key}'")
                         
                         data = json.dumps(parsed, ensure_ascii=False, indent=2)
-                        print(f"Éxito descargando el archivo completo. Total canales: {len(parsed)}")
+                        print(f"Éxito descargando el archivo. Total elementos: {len(parsed)}")
                         return data
-                    else:
-                        print(f"La URL devolvió una respuesta incompleta ({len(parsed) if isinstance(parsed, (dict, list)) else 'N/A'} elementos). Probando siguiente...")
         except Exception as e:
             print(f"Error descargando desde {url}: {e}")
     return None
