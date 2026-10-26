@@ -7,7 +7,6 @@ def main():
         with open('hashes.json', 'r', encoding='utf-8') as f:
             parsed = json.load(f)
         
-        # 'hashes' es una lista de canales, no un diccionario
         if isinstance(parsed, dict) and "hashes" in parsed and isinstance(parsed["hashes"], list):
             channels = parsed["hashes"]
         elif isinstance(parsed, list):
@@ -15,31 +14,33 @@ def main():
         else:
             channels = []
 
-        # Buscamos una plantilla existente de la NBA/ESPN en la lista para copiar su hash y propiedades
+        # Buscamos una plantilla existente de baloncesto/NBA/ESPN para copiar su hash
         nba_template = None
         for channel in channels:
             title = channel.get("title", "").lower()
-            if "nba" in title or "espn" in title:
+            if "nba" in title or "espn" in title or "baloncesto" in title:
                 nba_template = channel.copy()
                 break
         
-        # Si por algún motivo no estuviera, usamos el hash oficial que nos pasaste
         if not nba_template:
             nba_template = {
-                "title": "NBA ESPN 720p *",
+                "title": "NBA League Pass",
                 "hash": "f4991d32784f9c236b087fc864c42bbd18f9720f",
                 "group": "BALONCESTO",
                 "logo": "",
                 "tvg_id": ""
             }
 
-        # Lista de títulos/alias que la app o la web de eventos podrían buscar
+        # Ampliamos masivamente las variantes por si el calendario usa nombres cortos o variados
         target_titles = [
             "NBA League Pass",
             "NBA",
             "League Pass",
             "NBA ESPN",
-            "NBA ESPN 720p *"
+            "NBA TV",
+            "NBA League Pass HD",
+            "NBA *",
+            "NBA League Pass *"
         ]
 
         existing_titles = {ch.get("title") for ch in channels}
@@ -63,7 +64,7 @@ def main():
                 json.dump(parsed, f, ensure_ascii=False, indent=2)
             print("¡hashes.json actualizado con éxito!")
         else:
-            print("Todos los títulos de la NBA ya estaban presentes en la lista.")
+            print("Todos los títulos ya estaban presentes.")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
