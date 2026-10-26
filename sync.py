@@ -2,10 +2,12 @@ import json
 import urllib.request
 import sys
 
+# Pasarelas IPFS públicas ordenadas por fiabilidad para servidores automáticos
 SOURCE_URLS = [
-    "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
     "https://ipfs.io/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
-    "https://dweb.link/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
+    "https://dweb.link/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
+    "https://cloudflare-ipfs.com/ipfs/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
+    "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
 ]
 
 def fetch_json():
@@ -21,17 +23,19 @@ def fetch_json():
                     data_str = response.read().decode('utf-8')
                     parsed = json.loads(data_str)
                     
-                    # Detecta cualquier variante (720p, 1080p, etc.) que contenga "nba espn"
-                    if isinstance(parsed, dict):
+                    # SEGURIDAD: Exigir que tenga más de 10 elementos para evitar sobreescribir con datos incompletos
+                    if isinstance(parsed, dict) and len(parsed) > 10:
+                        # Mapeo flexible para cualquier variante de "nba espn" (720p, 1080p, etc.)
                         for key in list(parsed.keys()):
-                            key_lower = key.strip().lower()
-                            if "nba espn" in key_lower:
+                            if "nba espn" in key.strip().lower():
                                 parsed["NBA League Pass"] = parsed[key]
                                 print(f"Canal duplicado con éxito: 'NBA League Pass' mapeado desde '{key}'")
-                    
-                    data = json.dumps(parsed, ensure_ascii=False, indent=2)
-                    print(f"Éxito descargando desde {url}. Elementos: {len(parsed) if isinstance(parsed, (list, dict)) else 'Objeto'}")
-                    return data
+                        
+                        data = json.dumps(parsed, ensure_ascii=False, indent=2)
+                        print(f"Éxito descargando el archivo completo. Total canales: {len(parsed)}")
+                        return data
+                    else:
+                        print(f"La URL devolvió una respuesta incompleta ({len(parsed) if isinstance(parsed, (dict, list)) else 'N/A'} elementos). Probando siguiente...")
         except Exception as e:
             print(f"Error descargando desde {url}: {e}")
     return None
@@ -39,7 +43,7 @@ def fetch_json():
 def main():
     new_content = fetch_json()
     if not new_content:
-        print("No se pudo descargar de ninguna fuente. Se mantendrá la versión existente.")
+        print("No se pudo descargar de ninguna fuente válida. Se mantendrá la versión existente.")
         sys.exit(0)
 
     try:
