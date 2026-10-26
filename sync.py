@@ -14,28 +14,28 @@ def main():
         else:
             channels = []
 
-        # Buscamos un canal de baloncesto para copiar su hash como plantilla válida
+        # Buscamos un canal de baloncesto para clonar su hash válido
         basket_template = None
         for channel in channels:
             title = channel.get("title", "").lower()
-            if "baloncesto" in title or "dazn" in title:
+            if "baloncesto" in title or "dazn" in title or "nba" in title:
                 basket_template = channel.copy()
                 break
         
         if not basket_template:
             basket_template = {
-                "title": "DAZN Baloncesto 720p *",
+                "title": "NBA League Pass",
                 "hash": "328b312b08023249e858acbd3466dc07b1a21384",
                 "group": "BALONCESTO",
                 "logo": "",
                 "tvg_id": ""
             }
 
-        # Títulos exactos que extrae la web y que debemos contemplar
+        # Variantes exactas para cubrir cualquier formato de la web
         target_titles = [
             "NBA League Pass",
-            "NBA",
-            "League Pass"
+            "League Pass",
+            "NBA"
         ]
 
         existing_titles = {ch.get("title") for ch in channels}
