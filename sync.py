@@ -3,7 +3,7 @@ import sys
 
 def main():
     try:
-        print("Leyendo el archivo hashes.json del repositorio...")
+        print("Leyendo el archivo hashes.json...")
         with open('hashes.json', 'r', encoding='utf-8') as f:
             parsed = json.load(f)
         
@@ -14,28 +14,40 @@ def main():
         
         modified = False
         if isinstance(target_dict, dict):
-            # 1. Intentamos buscar si ya existe alguna clave de la NBA/ESPN en el repo
-            found = False
+            # Buscamos el hash de la NBA/ESPN existente
+            source_hash = None
             for key in list(target_dict.keys()):
-                if "nba" in key.strip().lower() or "espn" in key.strip().lower():
-                    found = True
-                    if "NBA League Pass" not in target_dict:
-                        target_dict["NBA League Pass"] = target_dict[key]
-                        print(f"¡Canal duplicado desde '{key}' como 'NBA League Pass'!")
-                        modified = True
+                key_lower = key.strip().lower()
+                if "nba" in key_lower or "espn" in key_lower:
+                    source_hash = target_dict[key]
+                    break
             
-            # 2. RED DE SEGURIDAD: Si GitHub no tenía el canal, lo inyectamos directamente con tu hash exacto
-            if not found and "NBA League Pass" not in target_dict:
-                target_dict["NBA League Pass"] = "f4991d32784f9c236b087fc864c42bbd18f9720f"
-                print("¡Canal 'NBA League Pass' inyectado directamente con el hash oficial!")
-                modified = True
+            # Si no se encuentra en el archivo, usamos el hash oficial conocido
+            if not source_hash:
+                source_hash = "f4991d32784f9c236b087fc864c42bbd18f9720f"
+            
+            # Lista completa de posibles nombres que la app o la web de eventos puedan buscar
+            aliases = [
+                "NBA League Pass", 
+                "NBA", 
+                "League Pass", 
+                "NBA ESPN", 
+                "NBA TV",
+                "NBA ESPN 720p *"
+            ]
+            
+            for alias in aliases:
+                if alias not in target_dict:
+                    target_dict[alias] = source_hash
+                    print(f"¡Alias creado con éxito: '{alias}'!")
+                    modified = True
         
         if modified:
             with open('hashes.json', 'w', encoding='utf-8') as f:
                 json.dump(parsed, f, ensure_ascii=False, indent=2)
-            print("¡hashes.json actualizado y guardado correctamente en GitHub!")
+            print("¡hashes.json actualizado con todos los alias de la NBA!")
         else:
-            print("El alias 'NBA League Pass' ya estaba presente en el archivo.")
+            print("Todos los alias ya estaban configurados correctamente.")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
