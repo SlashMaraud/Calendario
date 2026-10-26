@@ -960,6 +960,34 @@
       "group": "NBA",
       "logo": "https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png",
       "tvg_id": ""
+    },
+    {
+      "title": "NBA TV",
+      "hash": "328b312b08023249e858acbd3466dc07b1a21384",
+      "group": "BALONCESTO",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/refs/heads/master/icon/DAZN%20Baloncesto.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "NBA League Pass HD",
+      "hash": "328b312b08023249e858acbd3466dc07b1a21384",
+      "group": "BALONCESTO",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/refs/heads/master/icon/DAZN%20Baloncesto.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "NBA *",
+      "hash": "328b312b08023249e858acbd3466dc07b1a21384",
+      "group": "BALONCESTO",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/refs/heads/master/icon/DAZN%20Baloncesto.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "NBA League Pass *",
+      "hash": "328b312b08023249e858acbd3466dc07b1a21384",
+      "group": "BALONCESTO",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/refs/heads/master/icon/DAZN%20Baloncesto.png",
+      "tvg_id": ""
     }
   ]
 }
