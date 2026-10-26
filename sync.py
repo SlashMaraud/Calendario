@@ -7,37 +7,32 @@ def main():
         with open('hashes.json', 'r', encoding='utf-8') as f:
             parsed = json.load(f)
         
-        print(f"Tipo de estructura detectada: {type(parsed)}")
+        # Localizamos dónde están los canales (si están dentro de "hashes" o en la raíz)
+        target_dict = parsed
+        if isinstance(parsed, dict) and "hashes" in parsed:
+            print("Estructura contenedora detectada. Buscando dentro de 'hashes'...")
+            target_dict = parsed["hashes"]
         
-        if isinstance(parsed, dict):
-            print(f"Total de canales en el diccionario: {len(parsed)}")
-            print(f"Ejemplos de claves (primeros 10): {list(parsed.keys())[:10]}")
-            
-            modified = False
-            for key in list(parsed.keys()):
-                # Buscamos cualquier pista de nba o espn de forma muy amplia
+        modified = False
+        if isinstance(target_dict, dict):
+            print(f"Explorando {len(target_dict)} elementos...")
+            for key in list(target_dict.keys()):
                 key_lower = key.strip().lower()
-                if "nba" in key_lower or "espn" in key_lower:
-                    print(f"-> ¡Canal encontrado con coincidencia parcial!: '{key}'")
-                    if "NBA League Pass" not in parsed:
-                        parsed["NBA League Pass"] = parsed[key]
+                if "nba espn" in key_lower:
+                    print(f"-> ¡Canal encontrado: '{key}'!")
+                    if "NBA League Pass" not in target_dict:
+                        target_dict["NBA League Pass"] = target_dict[key]
                         print(f"   --> ¡Duplicado con éxito como 'NBA League Pass'!")
                         modified = True
                     else:
                         print(f"   --> El alias 'NBA League Pass' ya existía.")
-            
-            if modified:
-                with open('hashes.json', 'w', encoding='utf-8') as f:
-                    json.dump(parsed, f, ensure_ascii=False, indent=2)
-                print("¡hashes.json actualizado y guardado con éxito!")
-            else:
-                print("No se pudo duplicar porque ninguna clave cumplió la condición.")
-                
-        elif isinstance(parsed, list):
-            print(f"El archivo es una lista con {len(parsed)} elementos.")
-            print(f"Primer elemento de muestra: {parsed[0] if parsed else 'Vacío'}")
+        
+        if modified:
+            with open('hashes.json', 'w', encoding='utf-8') as f:
+                json.dump(parsed, f, ensure_ascii=False, indent=2)
+            print("¡hashes.json actualizado y guardado con éxito!")
         else:
-            print("Estructura de JSON no reconocida.")
+            print("No se realizaron cambios (es posible que el canal de la NBA no esté todavía en este archivo).")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
