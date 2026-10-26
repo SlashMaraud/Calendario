@@ -3,32 +3,41 @@ import sys
 
 def main():
     try:
-        # Leemos el archivo hashes.json que ya está en tu repositorio
         print("Leyendo el archivo hashes.json local...")
         with open('hashes.json', 'r', encoding='utf-8') as f:
             parsed = json.load(f)
         
-        modified = False
+        print(f"Tipo de estructura detectada: {type(parsed)}")
+        
         if isinstance(parsed, dict):
-            # Buscamos cualquier variante de "nba espn" (720p, 1080p, etc.)
+            print(f"Total de canales en el diccionario: {len(parsed)}")
+            print(f"Ejemplos de claves (primeros 10): {list(parsed.keys())[:10]}")
+            
+            modified = False
             for key in list(parsed.keys()):
-                if "nba espn" in key.strip().lower():
-                    # Si "NBA League Pass" no está creado o es diferente, lo mapeamos
+                # Buscamos cualquier pista de nba o espn de forma muy amplia
+                key_lower = key.strip().lower()
+                if "nba" in key_lower or "espn" in key_lower:
+                    print(f"-> ¡Canal encontrado con coincidencia parcial!: '{key}'")
                     if "NBA League Pass" not in parsed:
                         parsed["NBA League Pass"] = parsed[key]
-                        print(f"¡Canal duplicado con éxito! 'NBA League Pass' mapeado desde '{key}'")
+                        print(f"   --> ¡Duplicado con éxito como 'NBA League Pass'!")
                         modified = True
                     else:
-                        print("El alias 'NBA League Pass' ya existe en el JSON.")
-
-        if modified:
-            # Guardamos el archivo actualizado con el nuevo alias
-            new_content = json.dumps(parsed, ensure_ascii=False, indent=2)
-            with open('hashes.json', 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            print("hashes.json guardado correctamente con el alias de la NBA.")
+                        print(f"   --> El alias 'NBA League Pass' ya existía.")
+            
+            if modified:
+                with open('hashes.json', 'w', encoding='utf-8') as f:
+                    json.dump(parsed, f, ensure_ascii=False, indent=2)
+                print("¡hashes.json actualizado y guardado con éxito!")
+            else:
+                print("No se pudo duplicar porque ninguna clave cumplió la condición.")
+                
+        elif isinstance(parsed, list):
+            print(f"El archivo es una lista con {len(parsed)} elementos.")
+            print(f"Primer elemento de muestra: {parsed[0] if parsed else 'Vacío'}")
         else:
-            print("No se realizaron cambios (el alias ya estaba presente o no se encontró la clave).")
+            print("Estructura de JSON no reconocida.")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
