@@ -14,33 +14,28 @@ def main():
         else:
             channels = []
 
-        # Buscamos una plantilla existente de baloncesto/NBA/ESPN para copiar su hash
-        nba_template = None
+        # Buscamos un canal de baloncesto para copiar su hash como plantilla válida
+        basket_template = None
         for channel in channels:
             title = channel.get("title", "").lower()
-            if "nba" in title or "espn" in title or "baloncesto" in title:
-                nba_template = channel.copy()
+            if "baloncesto" in title or "dazn" in title:
+                basket_template = channel.copy()
                 break
         
-        if not nba_template:
-            nba_template = {
-                "title": "NBA League Pass",
-                "hash": "f4991d32784f9c236b087fc864c42bbd18f9720f",
+        if not basket_template:
+            basket_template = {
+                "title": "DAZN Baloncesto 720p *",
+                "hash": "328b312b08023249e858acbd3466dc07b1a21384",
                 "group": "BALONCESTO",
                 "logo": "",
                 "tvg_id": ""
             }
 
-        # Ampliamos masivamente las variantes por si el calendario usa nombres cortos o variados
+        # Títulos exactos que extrae la web y que debemos contemplar
         target_titles = [
             "NBA League Pass",
             "NBA",
-            "League Pass",
-            "NBA ESPN",
-            "NBA TV",
-            "NBA League Pass HD",
-            "NBA *",
-            "NBA League Pass *"
+            "League Pass"
         ]
 
         existing_titles = {ch.get("title") for ch in channels}
@@ -48,10 +43,11 @@ def main():
 
         for target_title in target_titles:
             if target_title not in existing_titles:
-                new_channel = nba_template.copy()
+                new_channel = basket_template.copy()
                 new_channel["title"] = target_title
+                new_channel["group"] = "BALONCESTO"
                 channels.append(new_channel)
-                print(f"¡Canal añadido a la lista: '{target_title}'!")
+                print(f"¡Canal añadido: '{target_title}'!")
                 modified = True
 
         if modified:
@@ -64,7 +60,7 @@ def main():
                 json.dump(parsed, f, ensure_ascii=False, indent=2)
             print("¡hashes.json actualizado con éxito!")
         else:
-            print("Todos los títulos ya estaban presentes.")
+            print("Los títulos ya estaban presentes.")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
