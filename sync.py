@@ -14,41 +14,42 @@ def main():
         else:
             channels = []
 
-        # Buscamos un canal de baloncesto para clonar su hash válido
-        basket_template = None
+        # 1. Buscamos el hash exacto del canal "NBA ESPN" o un equivalente de baloncesto
+        target_hash = None
         for channel in channels:
             title = channel.get("title", "").lower()
-            if "baloncesto" in title or "dazn" in title or "nba" in title:
-                basket_template = channel.copy()
+            if "nba espn" in title or "espn" in title:
+                target_hash = channel.get("hash")
                 break
         
-        if not basket_template:
-            basket_template = {
-                "title": "NBA League Pass",
-                "hash": "328b312b08023249e858acbd3466dc07b1a21384",
-                "group": "BALONCESTO",
-                "logo": "",
-                "tvg_id": ""
-            }
+        # Si no encuentra ESPN específico, busca cualquier NBA o baloncesto
+        if not target_hash:
+            for channel in channels:
+                title = channel.get("title", "").lower()
+                if "nba" in title or "baloncesto" in title:
+                    target_hash = channel.get("hash")
+                    break
 
-        # Variantes exactas para cubrir cualquier formato de la web
-        target_titles = [
-            "NBA League Pass",
-            "League Pass",
-            "NBA"
-        ]
+        if not target_hash:
+            target_hash = "328b312b08023249e858acbd3466dc07b1a21384" # Fallback por seguridad
+
+        # 2. El título exacto que la web emite y que la app busca
+        web_title = "NBA League Pass"
 
         existing_titles = {ch.get("title") for ch in channels}
         modified = False
 
-        for target_title in target_titles:
-            if target_title not in existing_titles:
-                new_channel = basket_template.copy()
-                new_channel["title"] = target_title
-                new_channel["group"] = "BALONCESTO"
-                channels.append(new_channel)
-                print(f"¡Canal añadido: '{target_title}'!")
-                modified = True
+        if web_title not in existing_titles:
+            new_channel = {
+                "title": web_title,
+                "hash": target_hash,
+                "group": "BALONCESTO",
+                "logo": "",
+                "tvg_id": ""
+            }
+            channels.append(new_channel)
+            print(f"¡Canal puente añadido: '{web_title}' enlazado al hash de NBA ESPN!")
+            modified = True
 
         if modified:
             if isinstance(parsed, dict) and "hashes" in parsed:
@@ -60,7 +61,7 @@ def main():
                 json.dump(parsed, f, ensure_ascii=False, indent=2)
             print("¡hashes.json actualizado con éxito!")
         else:
-            print("Los títulos ya estaban presentes.")
+            print("El título ya estaba presente en el JSON.")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
