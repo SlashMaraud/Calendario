@@ -14,55 +14,60 @@ def main():
         else:
             channels = []
 
-        # 1. Encontrar un hash de referencia válido (baloncesto o ESPN)
-        target_hash = None
-        for channel in channels:
-            title = channel.get("title", "").lower()
-            if "espn" in title or "dazn" in title or "baloncesto" in title:
-                if channel.get("hash"):
-                    target_hash = channel.get("hash")
-                    break
-        
-        if not target_hash:
-            target_hash = "328b312b08023249e858acbd3466dc07b1a21384"
-
-        # 2. Depurar la lista eliminando variantes confusas y asegurando la correcta
-        cleaned_channels = []
-        found_exact = False
-
+        # 1. Buscamos el hash exacto del canal "NBA ESPN 720*" o cualquier variante de NBA ESPN
+        source_hash = None
         for channel in channels:
             title = channel.get("title", "")
-            # Omitimos variantes sucias o con asteriscos para unificarlas
-            if title.lower() in ["nba league pass *", "nba league pass hd", "nba *"]:
-                continue
-            if title == "NBA League Pass":
-                found_exact = True
-                if not channel.get("hash"):
-                    channel["hash"] = target_hash
-            cleaned_channels.append(channel)
+            # Buscamos coincidencias que incluyan "nba espn"
+            if "nba espn" in title.lower():
+                source_hash = channel.get("hash")
+                print(f"¡Encontrado canal fuente: '{title}' con hash: {source_hash}!")
+                break
+        
+        # Si por lo que sea no lo encuentra exacto, buscamos cualquier variante de ESPN o baloncesto
+        if not source_hash:
+            for channel in channels:
+                title = channel.get("title", "").lower()
+                if "espn" in title or "baloncesto" in title:
+                    source_hash = channel.get("hash")
+                    break
 
-        # Si no existía la entrada exacta limpia, la añadimos
-        if not found_exact:
+        if not source_hash:
+            print("Aviso: No se encontró el canal de NBA ESPN, usando hash de respaldo.")
+            source_hash = "328b312b08023249e858acbd3466dc07b1a21384"
+
+        # 2. Aseguramos que "NBA League Pass" (el de la web) exista y tenga el hash de NBA ESPN
+        target_title = "NBA League Pass"
+        found_target = False
+
+        for channel in channels:
+            if channel.get("title") == target_title:
+                channel["hash"] = source_hash
+                channel["group"] = "BALONCESTO"
+                found_target = True
+                print(f"¡Actualizado '{target_title}' para que use el hash de NBA ESPN!")
+                break
+
+        # Si no existía en el JSON, lo creamos directamente con ese hash
+        if not found_target:
             new_channel = {
-                "title": "NBA League Pass",
-                "hash": target_hash,
+                "title": target_title,
+                "hash": source_hash,
                 "group": "BALONCESTO",
                 "logo": "",
                 "tvg_id": ""
             }
-            cleaned_channels.append(new_channel)
-            print("¡Entrada 'NBA League Pass' creada con éxito!")
-        else:
-            print("Entrada 'NBA League Pass' verificada y depurada.")
+            channels.append(new_channel)
+            print(f"¡Creado nuevo canal '{target_title}' enlazado al hash de NBA ESPN!")
 
         if isinstance(parsed, dict) and "hashes" in parsed:
-            parsed["hashes"] = cleaned_channels
+            parsed["hashes"] = channels
         else:
-            parsed = cleaned_channels
+            parsed = channels
             
         with open('hashes.json', 'w', encoding='utf-8') as f:
             json.dump(parsed, f, ensure_ascii=False, indent=2)
-        print("¡hashes.json actualizado y guardado correctamente!")
+        print("¡hashes.json sincronizado correctamente!")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
