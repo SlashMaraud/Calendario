@@ -14,29 +14,29 @@ def main():
         else:
             channels = []
 
-        # 1. Buscamos el hash exacto del canal "NBA ESPN 720*" o cualquier variante de NBA ESPN
+        # 1. Buscar exactamente el hash del canal "NBA ESPN 720p *"
         source_hash = None
         for channel in channels:
             title = channel.get("title", "")
-            # Buscamos coincidencias que incluyan "nba espn"
-            if "nba espn" in title.lower():
+            if title == "NBA ESPN 720p *" or title.lower() == "nba espn 720p *":
                 source_hash = channel.get("hash")
-                print(f"¡Encontrado canal fuente: '{title}' con hash: {source_hash}!")
+                print(f"¡Canal fuente exacto localizado: '{title}' (Hash: {source_hash})!")
                 break
         
-        # Si por lo que sea no lo encuentra exacto, buscamos cualquier variante de ESPN o baloncesto
+        # Búsqueda flexible de respaldo por si hay variaciones de espacios
         if not source_hash:
             for channel in channels:
                 title = channel.get("title", "").lower()
-                if "espn" in title or "baloncesto" in title:
+                if "nba espn 720p" in title or ("espn" in title and "720" in title):
                     source_hash = channel.get("hash")
+                    print(f"¡Canal fuente flexible localizado: '{channel.get('title')}' (Hash: {source_hash})!")
                     break
 
         if not source_hash:
-            print("Aviso: No se encontró el canal de NBA ESPN, usando hash de respaldo.")
             source_hash = "328b312b08023249e858acbd3466dc07b1a21384"
+            print("Aviso: No se encontró el canal exacto, usando hash de respaldo.")
 
-        # 2. Aseguramos que "NBA League Pass" (el de la web) exista y tenga el hash de NBA ESPN
+        # 2. Asegurar que "NBA League Pass" tenga exactamente ese hash
         target_title = "NBA League Pass"
         found_target = False
 
@@ -45,10 +45,9 @@ def main():
                 channel["hash"] = source_hash
                 channel["group"] = "BALONCESTO"
                 found_target = True
-                print(f"¡Actualizado '{target_title}' para que use el hash de NBA ESPN!")
+                print(f"¡Actualizado '{target_title}' con el hash de NBA ESPN 720p *!")
                 break
 
-        # Si no existía en el JSON, lo creamos directamente con ese hash
         if not found_target:
             new_channel = {
                 "title": target_title,
@@ -58,7 +57,7 @@ def main():
                 "tvg_id": ""
             }
             channels.append(new_channel)
-            print(f"¡Creado nuevo canal '{target_title}' enlazado al hash de NBA ESPN!")
+            print(f"¡Creado '{target_title}' enlazado al hash de NBA ESPN 720p *!")
 
         if isinstance(parsed, dict) and "hashes" in parsed:
             parsed["hashes"] = channels
@@ -67,7 +66,7 @@ def main():
             
         with open('hashes.json', 'w', encoding='utf-8') as f:
             json.dump(parsed, f, ensure_ascii=False, indent=2)
-        print("¡hashes.json sincronizado correctamente!")
+        print("¡hashes.json actualizado con éxito!")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
