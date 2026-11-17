@@ -23,16 +23,15 @@ def main():
         else:
             channels = []
 
-        # 1. Buscar cualquier canal que contenga "nba league pass" (obviando resolución o asteriscos detrás)
+        # 1. Buscar cualquier hash disponible de League Pass (ignorando si pone 1080p, 720p, etc.)
         league_pass_hash = None
         for channel in channels:
             title = channel.get("title", "").lower().strip()
             if "nba league pass" in title:
                 league_pass_hash = channel.get("hash")
-                print(f"Encontrado canal de League Pass en fuente: '{channel.get('title')}'")
                 break
 
-        # 2. Buscar el hash de NBA ESPN como respaldo por si no viniera ningún League Pass
+        # 2. Buscar el hash de NBA ESPN como respaldo por si la fuente no trae nada de League Pass
         espn_hash = None
         for channel in channels:
             title = channel.get("title", "").lower().strip()
@@ -43,21 +42,20 @@ def main():
         if not espn_hash:
             espn_hash = "328b312b08023249e858acbd3466dc07b1a21384"
 
-        # Decidir qué hash usar: el de League Pass (si la fuente lo trae) o el de ESPN (si no existe)
+        # Definir qué hash usar (prioridad al League Pass de la fuente, si no, ESPN)
         chosen_hash = league_pass_hash if league_pass_hash else espn_hash
 
-        # 3. Asegurar que exista exactamente el título limpio "NBA League Pass" para el match de la app
+        # 3. Asegurar que exista exactamente el título limpio "NBA League Pass" para el match
         target_title = "NBA League Pass"
         found_exact = False
 
         for channel in channels:
             if channel.get("title", "").strip().lower() == target_title.lower():
                 found_exact = True
-                # Actualizamos su hash por si el de la fuente varió
-                channel["hash"] = chosen_hash
+                channel["hash"] = chosen_hash  # Actualizamos por si el enlace cambió
                 break
 
-        # Si no existe de forma exacta, lo creamos limpio
+        # Si no existe exactamente con ese nombre limpio, lo creamos
         if not found_exact:
             new_channel = {
                 "title": target_title,
@@ -67,9 +65,9 @@ def main():
                 "tvg_id": ""
             }
             channels.append(new_channel)
-            print(f"Creado '{target_title}' limpio para asegurar el match.")
+            print(f"Creado '{target_title}' limpio para forzar el match.")
         else:
-            print(f"El canal '{target_title}' ya está sincronizado y listo para el match.")
+            print(f"El canal '{target_title}' ya existe y está sincronizado.")
 
         if isinstance(parsed, dict) and "hashes" in parsed:
             parsed["hashes"] = channels
