@@ -27,25 +27,23 @@ def main():
         target_title = "NBA League Pass"
         found_league_pass = False
 
-        # Comprobamos si "NBA League Pass" ya existe en la lista de IPFS
+        # 1. Comprobamos si "NBA League Pass" ya existe en la lista de IPFS
         for channel in channels:
             if channel.get("title", "").lower() == target_title.lower():
                 found_league_pass = True
                 break
 
-        # Si NO existe, lo creamos utilizando NBA ESPN como respaldo para que haga match
+        # 2. Si NO existe, buscamos NBA ESPN para crearlo usando su hash como respaldo
         if not found_league_pass:
-            print(f"'{target_title}' no está en la lista de IPFS. Buscando 'NBA ESPN' para usarlo como respaldo...")
+            print(f"'{target_title}' no se encuentra en la lista. Buscando 'NBA ESPN' para crearlo...")
             
             source_hash = None
-            # Buscar el hash del canal fuente "NBA ESPN 720p *"
             for channel in channels:
                 title = channel.get("title", "")
                 if title == "NBA ESPN 720p *" or title.lower() == "nba espn 720p *":
                     source_hash = channel.get("hash")
                     break
             
-            # Búsqueda flexible por si varía el nombre de ESPN
             if not source_hash:
                 for channel in channels:
                     title = channel.get("title", "").lower()
@@ -53,11 +51,10 @@ def main():
                         source_hash = channel.get("hash")
                         break
 
-            # Hash de respaldo final por si tampoco se encuentra ESPN
             if not source_hash:
-                source_hash = "328b312b08023249e858acbd3466dc07b1a21384"
+                source_hash = "328b312b08023249e858acbd3466dc07b1a21384" # Hash de respaldo por defecto
 
-            # Creamos el canal faltante para que la app lo reconozca
+            # Creamos "NBA League Pass" con el hash de NBA ESPN para que la app haga match
             new_channel = {
                 "title": target_title,
                 "hash": source_hash,
@@ -66,9 +63,9 @@ def main():
                 "tvg_id": ""
             }
             channels.append(new_channel)
-            print(f"¡Creado '{target_title}' enlazado al hash de NBA ESPN para garantizar el match!")
+            print(f"¡Creado '{target_title}' utilizando el hash de NBA ESPN!")
         else:
-            print(f"'{target_title}' ya existe en la fuente. Se mantienen los hashes independientes.")
+            print(f"'{target_title}' ya existe en la lista. Se mantiene independiente con su propio hash original.")
 
         if isinstance(parsed, dict) and "hashes" in parsed:
             parsed["hashes"] = channels
