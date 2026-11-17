@@ -23,42 +23,53 @@ def main():
         else:
             channels = []
 
-        target_keyword = "nba league pass"
-        found_league_pass = False
-
-        # Comprobamos de forma flexible si ya existe algún canal que contenga "nba league pass"
+        # 1. Buscar cualquier canal que contenga "nba league pass" (obviando resolución o asteriscos detrás)
+        league_pass_hash = None
         for channel in channels:
-            title = channel.get("title", "").lower()
-            if target_keyword in title:
-                found_league_pass = True
-                print(f"¡Canal encontrado: '{channel.get('title')}'! Ya existe en tus canales, se respeta intacto.")
+            title = channel.get("title", "").lower().strip()
+            if "nba league pass" in title:
+                league_pass_hash = channel.get("hash")
+                print(f"Encontrado canal de League Pass en fuente: '{channel.get('title')}'")
                 break
 
-        # Si de verdad no existe ninguno en absoluto, buscamos el de la ESPN y lo creamos
-        if not found_league_pass:
-            print("No se encontró ningún canal de League Pass en la fuente. Buscando NBA ESPN para crearlo...")
-            
-            source_hash = None
-            for channel in channels:
-                title = channel.get("title", "").lower()
-                if "nba espn" in title:
-                    source_hash = channel.get("hash")
-                    break
-            
-            if not source_hash:
-                source_hash = "328b312b08023249e858acbd3466dc07b1a21384"
+        # 2. Buscar el hash de NBA ESPN como respaldo por si no viniera ningún League Pass
+        espn_hash = None
+        for channel in channels:
+            title = channel.get("title", "").lower().strip()
+            if "nba espn" in title:
+                espn_hash = channel.get("hash")
+                break
+        
+        if not espn_hash:
+            espn_hash = "328b312b08023249e858acbd3466dc07b1a21384"
 
+        # Decidir qué hash usar: el de League Pass (si la fuente lo trae) o el de ESPN (si no existe)
+        chosen_hash = league_pass_hash if league_pass_hash else espn_hash
+
+        # 3. Asegurar que exista exactamente el título limpio "NBA League Pass" para el match de la app
+        target_title = "NBA League Pass"
+        found_exact = False
+
+        for channel in channels:
+            if channel.get("title", "").strip().lower() == target_title.lower():
+                found_exact = True
+                # Actualizamos su hash por si el de la fuente varió
+                channel["hash"] = chosen_hash
+                break
+
+        # Si no existe de forma exacta, lo creamos limpio
+        if not found_exact:
             new_channel = {
-                "title": "NBA League Pass",
-                "hash": source_hash,
+                "title": target_title,
+                "hash": chosen_hash,
                 "group": "BALONCESTO",
                 "logo": "",
                 "tvg_id": ""
             }
             channels.append(new_channel)
-            print("¡Creado 'NBA League Pass' usando el ID de NBA ESPN como comodín!")
+            print(f"Creado '{target_title}' limpio para asegurar el match.")
         else:
-            print("Los canales de League Pass ya están presentes en la fuente. No se modifica nada.")
+            print(f"El canal '{target_title}' ya está sincronizado y listo para el match.")
 
         if isinstance(parsed, dict) and "hashes" in parsed:
             parsed["hashes"] = channels
