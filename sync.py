@@ -8,7 +8,6 @@ def main():
         
         print("Leyendo el JSON desde IPFS...")
         
-        # Petición simulando ser un navegador web para evitar el error 403
         req = urllib.request.Request(
             json_url,
             headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
@@ -27,34 +26,30 @@ def main():
         target_title = "NBA League Pass"
         found_league_pass = False
 
-        # 1. Comprobamos si "NBA League Pass" ya existe en la lista de IPFS
+        # 1. Comprobar si "NBA League Pass" ya existe en tus canales
         for channel in channels:
             if channel.get("title", "").lower() == target_title.lower():
                 found_league_pass = True
                 break
 
-        # 2. Si NO existe, buscamos NBA ESPN para crearlo usando su hash como respaldo
-        if not found_league_pass:
-            print(f"'{target_title}' no se encuentra en la lista. Buscando 'NBA ESPN' para crearlo...")
+        # 2. Si YA existe: No lo tocamos, se queda con su propio archivo/hash original.
+        if found_league_pass:
+            print(f"'{target_title}' existe en tus canales. Se mantiene intacto con su propio hash.")
+        
+        # 3. Si NO existe en absoluto: Buscamos el ID de NBA ESPN y lo creamos con ese ID.
+        else:
+            print(f"'{target_title}' no aparece en tus canales. Buscando 'NBA ESPN' para asignarle su ID...")
             
             source_hash = None
             for channel in channels:
-                title = channel.get("title", "")
-                if title == "NBA ESPN 720p *" or title.lower() == "nba espn 720p *":
+                title = channel.get("title", "").lower()
+                if "nba espn" in title:
                     source_hash = channel.get("hash")
                     break
             
             if not source_hash:
-                for channel in channels:
-                    title = channel.get("title", "").lower()
-                    if "nba espn 720p" in title or ("espn" in title and "720" in title):
-                        source_hash = channel.get("hash")
-                        break
+                source_hash = "328b312b08023249e858acbd3466dc07b1a21384" # ID de respaldo por defecto
 
-            if not source_hash:
-                source_hash = "328b312b08023249e858acbd3466dc07b1a21384" # Hash de respaldo por defecto
-
-            # Creamos "NBA League Pass" con el hash de NBA ESPN para que la app haga match
             new_channel = {
                 "title": target_title,
                 "hash": source_hash,
@@ -63,20 +58,17 @@ def main():
                 "tvg_id": ""
             }
             channels.append(new_channel)
-            print(f"¡Creado '{target_title}' utilizando el hash de NBA ESPN!")
-        else:
-            print(f"'{target_title}' ya existe en la lista. Se mantiene independiente con su propio hash original.")
+            print(f"¡Creado '{target_title}' asignándole el ID de NBA ESPN!")
 
         if isinstance(parsed, dict) and "hashes" in parsed:
             parsed["hashes"] = channels
         else:
             parsed = channels
             
-        # Guarda el resultado actualizado localmente para GitHub Actions
         with open('hashes.json', 'w', encoding='utf-8') as f:
             json.dump(parsed, f, ensure_ascii=False, indent=2)
             
-        print("¡hashes.json procesado y actualizado con éxito!")
+        print("¡hashes.json procesado con éxito!")
 
     except Exception as e:
         print(f"Error procesando el archivo: {e}")
