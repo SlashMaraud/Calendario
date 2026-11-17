@@ -1,11 +1,15 @@
 import json
 import sys
+import urllib.request
 
 def main():
     try:
-        print("Leyendo el archivo hashes.json...")
-        with open('hashes.json', 'r', encoding='utf-8') as f:
-            parsed = json.load(f)
+        # Nueva URL de origen en IPFS
+        json_url = "https://ipfs.bytokyo.dpdns.org/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
+        
+        print("Leyendo el JSON desde la nueva URL de IPFS...")
+        with urllib.request.urlopen(json_url) as response:
+            parsed = json.loads(response.read().decode('utf-8'))
         
         if isinstance(parsed, dict) and "hashes" in parsed and isinstance(parsed["hashes"], list):
             channels = parsed["hashes"]
@@ -64,6 +68,7 @@ def main():
         else:
             parsed = channels
             
+        # Guarda el resultado actualizado localmente para que GitHub Actions lo suba
         with open('hashes.json', 'w', encoding='utf-8') as f:
             json.dump(parsed, f, ensure_ascii=False, indent=2)
         print("¡hashes.json actualizado con éxito!")
