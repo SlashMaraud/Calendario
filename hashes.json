@@ -1,14 +1,28 @@
 {
-  "generated": "2026-11-21T06:30:12Z",
-  "count": 142,
+  "generated": "2026-11-21T15:47:46Z",
+  "count": 154,
   "vps_updated": {
-    "VPS1": "2026-11-21T06:30:04Z",
-    "VPS2": "2026-11-21T06:30:04Z"
+    "VPS2": "2026-11-21T15:47:42Z",
+    "VPS1": "2026-11-21T15:47:42Z"
   },
   "hashes": [
     {
       "title": "DAZN Baloncesto 720p **",
       "hash": "81726596472933c3dfc9b3cd31fef7d0716c8ba4",
+      "group": "BALONCESTO",
+      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png",
+      "tvg_id": "DAZN Baloncesto"
+    },
+    {
+      "title": "DAZN Baloncesto 1080p *",
+      "hash": "1020bfc5ec9a2c1b668cce2c9d04e1bc2ca9b944",
+      "group": "BALONCESTO",
+      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png",
+      "tvg_id": "DAZN Baloncesto"
+    },
+    {
+      "title": "DAZN Baloncesto 1080p **",
+      "hash": "535b353f94a275ca60ab176c0633ecbb561b41f2",
       "group": "BALONCESTO",
       "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png",
       "tvg_id": "DAZN Baloncesto"
@@ -49,8 +63,22 @@
       "tvg_id": "M+ Baloncesto"
     },
     {
+      "title": "M+ Baloncesto 1080p **",
+      "hash": "31f2a257cd226d80339342c449d76339b4a1e6fa",
+      "group": "BALONCESTO",
+      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
+      "tvg_id": "M+ Baloncesto"
+    },
+    {
       "title": "M+ Baloncesto 2 1080p *",
       "hash": "dce8628942410de57606a6849ab6be46de3f9458",
+      "group": "BALONCESTO",
+      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
+      "tvg_id": "M+ Baloncesto 2"
+    },
+    {
+      "title": "M+ Baloncesto 2 1080p **",
+      "hash": "d43d6e5e0a6c9ec24f85bbab92d5c8a2771a1572",
       "group": "BALONCESTO",
       "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
       "tvg_id": "M+ Baloncesto 2"
@@ -70,6 +98,13 @@
       "tvg_id": ""
     },
     {
+      "title": "M+ Baloncesto 4 1080p *",
+      "hash": "d2b46901e81e835371df1e07c1cc15699b46ed52",
+      "group": "BALONCESTO",
+      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
+      "tvg_id": ""
+    },
+    {
       "title": "M+ Baloncesto 4 1080p **",
       "hash": "a480728284f91ea3dc2a0b710f40b0e42a44dc43",
       "group": "BALONCESTO",
@@ -82,6 +117,20 @@
       "group": "BALONCESTO",
       "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
       "tvg_id": ""
+    },
+    {
+      "title": "M+ Baloncesto 5 1080p **",
+      "hash": "51a3f692514fb9ef9541700da54fb8d8cc1d546d",
+      "group": "BALONCESTO",
+      "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg",
+      "tvg_id": ""
+    },
+    {
+      "title": "DAZN 1 720p **",
+      "hash": "7482eec330fe108c6e00be3558e527f404f73478",
+      "group": "DAZN",
+      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
+      "tvg_id": "DAZN 1 HD"
     },
     {
       "title": "DAZN 1 1080p *",
@@ -105,6 +154,13 @@
       "tvg_id": "DAZN 2 HD"
     },
     {
+      "title": "DAZN 2 1080p *",
+      "hash": "b649d084ca326e77a26ce78d172a003e320bc4d7",
+      "group": "DAZN",
+      "logo": "https://i.ibb.co/Kz0GXSX/dazn2.png",
+      "tvg_id": "DAZN 2 HD"
+    },
+    {
       "title": "DAZN 2 1080p **",
       "hash": "55616eb11715c5ce83659f28e3aa191f95ff7cef",
       "group": "DAZN",
@@ -117,6 +173,13 @@
       "group": "DAZN",
       "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
       "tvg_id": "DAZN 3 HD"
+    },
+    {
+      "title": "DAZN 4 1080p *",
+      "hash": "0d7002051dccb87105798f17d40baf2cc201a1a0",
+      "group": "DAZN",
+      "logo": "https://i.ibb.co/FVzKq1y/dazn1.png",
+      "tvg_id": "DAZN 4 HD"
     },
     {
       "title": "Eurosport 1 720p **",
@@ -168,8 +231,8 @@
       "tvg_id": "DAZN F1 HD"
     },
     {
-      "title": "DAZN F1 1080p **",
-      "hash": "70ebe42b14d792f74acf931da7d4eb649bb2df0e",
+      "title": "DAZN F1 1080p *",
+      "hash": "9944d8bef913ec380e11bec0ea7d565f449604c6",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -177,6 +240,20 @@
     {
       "title": "DAZN F1 1080p **",
       "hash": "8ddb70f5fe3c221d71803481368d4f0a2bbf3667",
+      "group": "FORMULA 1",
+      "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
+      "tvg_id": "DAZN F1 HD"
+    },
+    {
+      "title": "DAZN F1 1080p **",
+      "hash": "9b1fa0be70ab0bcc78182631d2bff80ade31e940",
+      "group": "FORMULA 1",
+      "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
+      "tvg_id": "DAZN F1 HD"
+    },
+    {
+      "title": "DAZN F1 1080p **",
+      "hash": "70ebe42b14d792f74acf931da7d4eb649bb2df0e",
       "group": "FORMULA 1",
       "logo": "https://i.ibb.co/2Ndmtbp/f1.png",
       "tvg_id": "DAZN F1 HD"
@@ -238,25 +315,18 @@
       "tvg_id": "LaLiga TV Hypermotion 3"
     },
     {
-      "title": "LaLiga TV Hypermotion *",
-      "hash": "1285fbe392b67c3fbc2284fcef8094d06c65eee5",
-      "group": "HYPERMOTION",
-      "logo": "https://i.ibb.co/CBdGc9f/hypermotion1.png",
-      "tvg_id": "LaLiga TV Hypermotion HD"
-    },
-    {
-      "title": "DAZN LaLiga 720p **",
-      "hash": "819b5627494a7830591ed7b995268315edcc7d0a",
-      "group": "LA LIGA",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
-      "tvg_id": "DAZN LaLiga HD"
-    },
-    {
       "title": "DAZN LaLiga 1080p *",
       "hash": "7f11f3366b520f71adedddf6ff1ad70362cc6a65",
       "group": "LA LIGA",
       "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png",
       "tvg_id": "DAZN LaLiga HD"
+    },
+    {
+      "title": "DAZN LaLiga 2 1080p *",
+      "hash": "0e8da42adea7a2372ff06648474a2e3b5f858312",
+      "group": "LA LIGA",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png",
+      "tvg_id": "DAZN LaLiga 2 HD"
     },
     {
       "title": "M+ LaLiga 720p *",
@@ -288,6 +358,13 @@
     },
     {
       "title": "M+ LaLiga 1080p **",
+      "hash": "aa1e23b2456bcee1eebaae19dc222fe8827375f7",
+      "group": "LA LIGA",
+      "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
+      "tvg_id": "M+ LaLiga HD"
+    },
+    {
+      "title": "M+ LaLiga 1080p **",
       "hash": "a037fc909bdc14f3741e8e357ab255c5eb50db3c",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/yfV1Q8n/liga.png",
@@ -303,6 +380,13 @@
     {
       "title": "M+ LaLiga 2 1080p **",
       "hash": "10f8b302cc3b2eb96ee53130286988f07845467a",
+      "group": "LA LIGA",
+      "logo": "https://i.ibb.co/Tc97zSb/liga2.png",
+      "tvg_id": "M+ LaLiga 2 HD"
+    },
+    {
+      "title": "M+ LaLiga 2 *",
+      "hash": "2edbaced018a9b39fd66c695a0bdca5d9d54f667",
       "group": "LA LIGA",
       "logo": "https://i.ibb.co/Tc97zSb/liga2.png",
       "tvg_id": "M+ LaLiga 2 HD"
@@ -343,8 +427,8 @@
       "tvg_id": "M+ Liga de Campeones HD"
     },
     {
-      "title": "M+ Liga de Campeones 2 1080p **",
-      "hash": "e4dc9305ef1933314ef31c9aa476e7eba38de6e8",
+      "title": "M+ Liga de Campeones 2 1080p *",
+      "hash": "935afe310d3d04e88eafbb279cc6e2739140107c",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png",
       "tvg_id": "M+ Liga de Campeones 2 HD"
@@ -357,11 +441,39 @@
       "tvg_id": "M+ Liga de Campeones 2 HD"
     },
     {
+      "title": "M+ Liga de Campeones 2 1080p **",
+      "hash": "e4dc9305ef1933314ef31c9aa476e7eba38de6e8",
+      "group": "LIGA DE CAMPEONES",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png",
+      "tvg_id": "M+ Liga de Campeones 2 HD"
+    },
+    {
+      "title": "M+ Liga de Campeones 3 720p **",
+      "hash": "6b4bbb1d4b8b8687330a1954b3692274517748f7",
+      "group": "LIGA DE CAMPEONES",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png",
+      "tvg_id": "M+ Liga de Campeones 3 HD"
+    },
+    {
       "title": "M+ Liga de Campeones 3 1080p **",
       "hash": "08c3670fbbee3ee7a06642b72d45e9eb3408da4f",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png",
       "tvg_id": "M+ Liga de Campeones 3 HD"
+    },
+    {
+      "title": "M+ Liga de Campeones 4 1080p *",
+      "hash": "c6e038aa3938b4f6a58a212a08b324851a361048",
+      "group": "LIGA DE CAMPEONES",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png",
+      "tvg_id": "M+ Liga de Campeones 4"
+    },
+    {
+      "title": "M+ Liga de Campeones 5 1080p **",
+      "hash": "82247d8df244252a2ba9152ab946fb17533905b9",
+      "group": "LIGA DE CAMPEONES",
+      "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png",
+      "tvg_id": "M+ Liga de Campeones 5"
     },
     {
       "title": "M+ Liga de Campeones 6 1080p **",
@@ -392,8 +504,8 @@
       "tvg_id": ""
     },
     {
-      "title": "M+ Liga de Campeones 9 1080p **",
-      "hash": "1f528ed789f615ceccb4f878634ea2b767ec7442",
+      "title": "M+ Liga de Campeones 8 1080p **",
+      "hash": "21bf0bdb3e477e50f763824c40dae8cc4208867d",
       "group": "LIGA DE CAMPEONES",
       "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png",
       "tvg_id": ""
@@ -462,13 +574,6 @@
       "tvg_id": "M+ Deportes 2 HD"
     },
     {
-      "title": "M+ Deportes 2 1080p **",
-      "hash": "6b556144b907286ddc6dc071ecf7362b0fab5f78",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://i.ibb.co/q95fBKV/deportes2.png",
-      "tvg_id": "M+ Deportes 2 HD"
-    },
-    {
       "title": "M+ Deportes 3 720p *",
       "hash": "6ee61c2b5b3e068b06ced9ce1dde5062af7d4d7e",
       "group": "MOVISTAR DEPORTES",
@@ -502,13 +607,6 @@
       "group": "MOVISTAR DEPORTES",
       "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/deportes-5-por-movistar-plus-es.png",
       "tvg_id": "M+ Deportes 5"
-    },
-    {
-      "title": "M+ Deportes 6 1080p **",
-      "hash": "f341a18718f395533bff27bf70063c6edfe0f28c",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://www.movistarplus.es/recorte/n/caratula5/M2114916V1621463",
-      "tvg_id": "M+ Deportes 6"
     },
     {
       "title": "M+ Deportes 7 720p *",
@@ -553,6 +651,13 @@
       "tvg_id": "M+ Golf 2 HD"
     },
     {
+      "title": "M+ Golf 2 1080p **",
+      "hash": "00962019be1f34c24f29c9d1a7ec5c8241d2c4bd",
+      "group": "MOVISTAR DEPORTES",
+      "logo": "https://r2.thesportsdb.com/images/media/channel/logo/irjqp71744196637.png",
+      "tvg_id": "M+ Golf 2 HD"
+    },
+    {
       "title": "M+ Vamos 720p *",
       "hash": "27197daae8ce31d03ad69c1ac189333ec608150b",
       "group": "MOVISTAR DEPORTES",
@@ -588,13 +693,6 @@
       "tvg_id": "M+ Vamos 2"
     },
     {
-      "title": "M+ VAMOS 2 1080p *",
-      "hash": "c04f1daf665ca4b6a8d1f6d552b2bffff1c839d3",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://i.ibb.co/gWMRpFB/vamos.png",
-      "tvg_id": "M+ Vamos 2"
-    },
-    {
       "title": "M+ VAMOS 2 1080p **",
       "hash": "bec179fcda0f5016821bcc97f34f407d86f128e6",
       "group": "MOVISTAR DEPORTES",
@@ -609,32 +707,11 @@
       "tvg_id": "M+ Vamos 2"
     },
     {
-      "title": "M+ VAMOS 3 720p **",
-      "hash": "042acc23562903fa562caa5c632ca9af9b462862",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://i.ibb.co/gWMRpFB/vamos.png",
-      "tvg_id": "M+ Vamos 3"
-    },
-    {
       "title": "M+ VAMOS 3 1080p *",
-      "hash": "fe4f07ac796b8c2dfcf462f73ce2c76b011e552a",
+      "hash": "0e3f0f3e36f1164487381fa64a1cff505dc83a77",
       "group": "MOVISTAR DEPORTES",
       "logo": "https://i.ibb.co/gWMRpFB/vamos.png",
       "tvg_id": "M+ Vamos 3"
-    },
-    {
-      "title": "M+ VAMOS 3 1080p **",
-      "hash": "e3c1fddec5819fac8a134acba95bd59ac2c1726c",
-      "group": "MOVISTAR DEPORTES",
-      "logo": "https://i.ibb.co/gWMRpFB/vamos.png",
-      "tvg_id": "M+ Vamos 3"
-    },
-    {
-      "title": "RFEF TV 1080p *",
-      "hash": "bf95e600e8f546948eb4f170079533b2a38954ac",
-      "group": "RFEF TV",
-      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
-      "tvg_id": "Primera Federación"
     },
     {
       "title": "RFEF TV 1080p *",
@@ -644,15 +721,15 @@
       "tvg_id": "Primera Federación"
     },
     {
-      "title": "RFEF TV 1080p **",
-      "hash": "36820e768af871a66048cd702f8f3988683f6242",
+      "title": "RFEF TV 1080p *",
+      "hash": "bf95e600e8f546948eb4f170079533b2a38954ac",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
     },
     {
       "title": "RFEF TV 1080p **",
-      "hash": "11b5d7c2d559b12d65ee03f543e12aa39c8fc3cb",
+      "hash": "36820e768af871a66048cd702f8f3988683f6242",
       "group": "RFEF TV",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es",
       "tvg_id": "Primera Federación"
@@ -729,21 +806,14 @@
     },
     {
       "title": "A Punt 1080p *",
-      "hash": "ad7a52a05039e95e73a334e9d4518832ff84f448",
-      "group": "DEPORTES",
-      "logo": "",
-      "tvg_id": ""
-    },
-    {
-      "title": "A Punt 1080p *",
       "hash": "5f09f7cae7b7d3fb9b7e492dbab3edfe1e70067c",
       "group": "DEPORTES",
       "logo": "",
       "tvg_id": ""
     },
     {
-      "title": "A Punt 1080p **",
-      "hash": "1e0e3067189ce19b341b9e809df2e059a5c6a85e",
+      "title": "A Punt 1080p *",
+      "hash": "ad7a52a05039e95e73a334e9d4518832ff84f448",
       "group": "DEPORTES",
       "logo": "",
       "tvg_id": ""
@@ -751,6 +821,13 @@
     {
       "title": "A Punt 1080p **",
       "hash": "fb0f6e32e15857a821240abbed6da0379bed40dc",
+      "group": "DEPORTES",
+      "logo": "",
+      "tvg_id": ""
+    },
+    {
+      "title": "A Punt 1080p **",
+      "hash": "1e0e3067189ce19b341b9e809df2e059a5c6a85e",
       "group": "DEPORTES",
       "logo": "",
       "tvg_id": ""
@@ -812,22 +889,8 @@
       "tvg_id": "Real Madrid TV"
     },
     {
-      "title": "SPORT TV3 1080p *",
-      "hash": "40820f30c5072f7cc9f0e4b42eecc460fbdd8e4b",
-      "group": "DEPORTES",
-      "logo": "https://r2.thesportsdb.com/images/media/channel/logo/fjy5d31700902671.png",
-      "tvg_id": ""
-    },
-    {
-      "title": "SPORT TV3 1080p **",
-      "hash": "b98b2fa1291b9ed9d6eaa36b85699ec9087f6a4a",
-      "group": "DEPORTES",
-      "logo": "https://r2.thesportsdb.com/images/media/channel/logo/fjy5d31700902671.png",
-      "tvg_id": ""
-    },
-    {
-      "title": "Sport TV+ 1080p *",
-      "hash": "d04d68af86e33ddc4a5d83a6dffd14a473b30a6c",
+      "title": "SPORT TV3 720p **",
+      "hash": "3bbfbf4bd176ece16ee8e7e52a7ff52d03ce8478",
       "group": "DEPORTES",
       "logo": "https://r2.thesportsdb.com/images/media/channel/logo/fjy5d31700902671.png",
       "tvg_id": ""
@@ -849,6 +912,13 @@
     {
       "title": "Teledeporte 1080p *",
       "hash": "1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d",
+      "group": "DEPORTES",
+      "logo": "https://img2.rtve.es/n/15966755",
+      "tvg_id": "Teledeporte"
+    },
+    {
+      "title": "Teledeporte 1080p **",
+      "hash": "1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55",
       "group": "DEPORTES",
       "logo": "https://img2.rtve.es/n/15966755",
       "tvg_id": "Teledeporte"
@@ -876,14 +946,14 @@
     },
     {
       "title": "Dazn MotoGP 1080p **",
-      "hash": "3104d58909f284e949844fb6a39e0baf1a6fc3e4",
+      "hash": "36e61c0f5bf9c83ef3bfe9777e3d2f7d9e8e62df",
       "group": "MOTOGP",
       "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
       "tvg_id": "DAZN MotoGP"
     },
     {
       "title": "Dazn MotoGP 1080p **",
-      "hash": "36e61c0f5bf9c83ef3bfe9777e3d2f7d9e8e62df",
+      "hash": "3104d58909f284e949844fb6a39e0baf1a6fc3e4",
       "group": "MOTOGP",
       "logo": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg",
       "tvg_id": "DAZN MotoGP"
@@ -931,10 +1001,24 @@
       "tvg_id": ""
     },
     {
+      "title": "NBA League Pass 1080p *",
+      "hash": "594d954ecc68f601040630de6671cd648e0964f6",
+      "group": "NBA",
+      "logo": "https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png",
+      "tvg_id": ""
+    },
+    {
       "title": "NBA League Pass 1080p **",
       "hash": "53c92aafb0dabf38c55b6f3d816f5f10a1977db3",
       "group": "NBA",
       "logo": "https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png",
+      "tvg_id": ""
+    },
+    {
+      "title": "Sky Sport Tennis 1080p *",
+      "hash": "c7e20411cecda0cafad50aef6d91822ebc8b9f10",
+      "group": "TENNIS",
+      "logo": "https://pbs.twimg.com/profile_images/1951065414118539266/9Go2oZlV_400x400.jpg",
       "tvg_id": ""
     },
     {
@@ -967,20 +1051,6 @@
     },
     {
       "title": "UFC *",
-      "hash": "b6b1e18fd680e0525bbbb46a4eeab2da41d7a967",
-      "group": "UFC",
-      "logo": "",
-      "tvg_id": ""
-    },
-    {
-      "title": "UFC *",
-      "hash": "5b845a7b10177aaca45f36eac5ef9c46b7b35537",
-      "group": "UFC",
-      "logo": "",
-      "tvg_id": ""
-    },
-    {
-      "title": "UFC *",
       "hash": "62a1dc7f52ad0e6fd520be0cc27ede436ecbc41c",
       "group": "UFC",
       "logo": "",
@@ -988,7 +1058,21 @@
     },
     {
       "title": "UFC *",
+      "hash": "b6b1e18fd680e0525bbbb46a4eeab2da41d7a967",
+      "group": "UFC",
+      "logo": "",
+      "tvg_id": ""
+    },
+    {
+      "title": "UFC *",
       "hash": "b2d795e711ec6960bbc3c1f7e82c893db9fee09a",
+      "group": "UFC",
+      "logo": "",
+      "tvg_id": ""
+    },
+    {
+      "title": "UFC *",
+      "hash": "5b845a7b10177aaca45f36eac5ef9c46b7b35537",
       "group": "UFC",
       "logo": "",
       "tvg_id": ""
